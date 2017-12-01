@@ -57,7 +57,7 @@ for n = 1:90
         randpix = randsample(idxs,frac,false);
         imcopy(randpix) = 1;
       end
-      %imwrite(imcopy,strcat('circle_',num2str(n-1),'.bmp'),'bmp')
-      imshow(imcopy)
-      pause(0.001)
+      imwrite(imcopy,strcat('circle_',num2str(n-1),'.bmp'),'bmp')
+      %imshow(imcopy)
+      %pause(0.001)
 end
